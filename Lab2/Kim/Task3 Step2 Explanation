@@ -1,0 +1,6 @@
+To make a black square I first reset turtlesim with the /reset service.
+Next I changed the pen color to black, 0,0,0 is the defauly rgb value so no parameters were needed.
+Then I used the following command to move it forwards 
+$ ros2 topic pub --once /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear:{x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}"
+and then changed the angle with the RotateAbsolute angle, incrementing by pi/2 each time.
+I did this 4 times to make a square.
