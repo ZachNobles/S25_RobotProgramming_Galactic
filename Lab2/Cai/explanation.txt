@@ -1,5 +1,9 @@
-I utilized: 
+To change the pen to be black I used the set pen service:
+ros2 service call /turtle1/set_pen turtlesim/srv/SetPen "{r: 0, g: 0, b: 0, width: 3}"
+
+For drawing, I utilized: 
 ros2 action send_goal /turtle1/rotate_absolute turtlesim/action/RotateAbsolute “{theta: x}”
+
 to rotate the turtle to: 0 degrees, 90 degrees, 180 degrees, and 270 degrees
-In theta, it was approximated to be 0, 1.55, 3.14, 4.69
+In theta, it was approximated to be 0, 1.55, 3.14, 4.69.
 In order to draw the line, I just used the teleop key to move the turtle forward one unit length.
