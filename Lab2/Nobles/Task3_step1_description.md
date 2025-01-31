@@ -1,5 +1,6 @@
 1. Made the pen color black using
-```ros2 service call /turtle1/set_pen turtlesim/srv/SetPen "'r': 0
+```
+ros2 service call /turtle1/set_pen turtlesim/srv/SetPen "'r': 0
 'g': 0
 'b': 0
 'width': 10
