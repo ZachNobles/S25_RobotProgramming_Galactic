@@ -1,0 +1,6 @@
+Method Used: 
+1. Stated turtlesim_node
+2. Set the turtle's pen color to black using the /turtle1/set_pen service.
+3. Used teleop controls to move forward and rotate.
+4. Repeated the process to create a square.
+5. Verified the square was drawn and took a screenshot.
