@@ -1,0 +1,12 @@
+I first cleared the previous lines from the turtle using:
+ros2 service call /clear std_srvs/srv/Empty
+
+And reset the turtle with:
+ros2 service call /reset std_srvs/srv/Empty
+
+I next set the color to black and width of the pen 5 (for easy visibility) using:
+ros2 service call /turtle1/set_pen turtlesim/srv/SetPen "{r: 0, g: 0, b: 0, width: 5}"
+
+Finally, for actually drawing the square, I used a combination of commands in the terminal to precisely angle the turtle (as best I could) and the arrow keys from the teleop to move the turtle forward. I alternated between rotating the turtle and pressing the up arrow to move. The command I used to rotate is:
+ros2 action send_goal /turtle1/rotate_absolute turtlesim/action/RotateAsolute "{theta: 0.0}"
+The first direction was set to theta = 0 and for each subsequent rotation increased that value by approximately pi/2 radians. This lead to the values of 0.0, 1.57, 3.14, and 4.71, again moving the turtle forward with the teleop between each command. 
